@@ -123,8 +123,29 @@ nav .navbar-btn {
 
 .best-deals .main .content .icons img {
   margin-top: 25px;
-  margin-left: 10px;
   cursor: pointer;
+}
+
+.best-deals .main .content .icons img:last-child {
+  margin-left: 10px;
+}
+
+.best-deals .main .content .descover-btn {
+  padding: 15px 20px;
+  color: #eee;
+  cursor: pointer;
+  border: none;
+  background: linear-gradient(90deg, var(--first-color), var(--second-color)); 
+  border-radius: 25px;
+  font-size: 19px;
+  margin-top: 75px;
+}
+
+@media (max-width:991px) {
+  .best-deals .main .content .descover-btn {
+    font-size: 15px;
+    padding: 10px 15px;
+  }
 }
 
 .best-deals .main .main-img {
