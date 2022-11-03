@@ -138,13 +138,14 @@ nav .navbar-btn {
   background: linear-gradient(90deg, var(--first-color), var(--second-color)); 
   border-radius: 25px;
   font-size: 19px;
-  margin-top: 75px;
+  margin-top: 150px;
 }
 
 @media (max-width:991px) {
   .best-deals .main .content .descover-btn {
-    font-size: 15px;
-    padding: 10px 15px;
+    font-size: 13px;
+    padding: 5px 10px;
+    margin-top: 75px;
   }
 }
 
@@ -152,3 +153,21 @@ nav .navbar-btn {
   width: 80%;
 }
 /* End Best Deals Section */
+/* Start Purchase Section */
+.purchase .content .heading {
+  margin-top: 25px;
+}
+
+.purchase .content .heading h1 {
+  font-weight: 650;
+  line-height: 1.3;
+}
+
+.purchase .content .heading p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #333;
+  line-height: 1.8;
+  margin-top: 25px;
+}
+/* End Purchase Section */
