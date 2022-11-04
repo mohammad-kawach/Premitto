@@ -1,8 +1,8 @@
 $(document).ready(function () {
   let x = 0;
 
-  $(".offers .content .options .details:last-child").addClass("purple-text");
-  $(".offers .content .options .details:last-child").addClass("gradient");
+  $(".offers .content .options .details:first-child").addClass("purple-text");
+  $(".offers .content .options .details:first-child").addClass("gradient");
 
   $(".offers .content .options .details").hover(
     function () {
