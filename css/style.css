@@ -264,3 +264,113 @@ nav .navbar-btn {
   }
 }
 /* End Purchase Section */
+/* Start Offers Section */
+.offers .content .heading {
+  margin: 0 auto;
+  width: 575px;
+  overflow-wrap: break-word;  
+  word-wrap: break-word; 
+  word-break: break-word;
+}
+
+@media screen and (max-width: 991px) {
+  .offers .content .heading {
+    width: 330px;
+    overflow-wrap: break-word;  
+    word-wrap: break-word; 
+    word-break: break-word;
+  }
+}
+
+.offers .content .heading h1 {
+  margin: 0 auto 25px auto;
+  font-size: 45px;
+  line-height: 1.4;
+}
+
+@media screen and (max-width: 991px) {
+  .offers .content .heading h1 {
+    margin: 0 auto 15px auto;
+    font-size: 30px;
+    line-height: 1.4;
+    /* overflow-wrap: none; */
+  }
+
+  .offers .content .heading p.description {
+    margin: 10px 0;
+    font-size: 20px !important;
+  }
+
+  .offers .content .heading p.text {
+    font-size: 13px !important;
+    line-height: 1.5 !important;
+  }
+
+  .offers .content .heading img {
+    margin-top: 25px !important;
+  }
+}
+
+.offers .content .heading p {
+  color: #777;
+}
+
+.offers .content .heading p.description {
+  font-size: 25px;
+}
+
+.offers .content .heading p.text {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.offers .content .heading img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+.offers .content .options {
+  display: flex;
+  border-top: 5px solid #e9e9e9;
+  margin-top: 40px;
+}
+
+@media screen and (max-width: 991px) {
+  .offers .content .options {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.offers .content .options .details {
+  transition: 0.3s;
+}
+
+.offers .content .options .details h3 {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 15px 0;
+}
+
+.offers .content .options .details p {
+  opacity: 0.5;
+}
+
+.gradient::before {
+  content: '';
+  transition-delay: 1px;
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  background:-webkit-linear-gradient(60deg, var(--first-color), var(--second-color)) !important;
+  top: -5px;
+  left: 0;
+  z-index: 2;
+  transition: background 1.2s ease-in-out;
+  -webkit-transition: background 1.2s ease-in-out;
+}
+
+.purple-text {
+  color: var(--first-color);
+}
+/* End Offers Section */
