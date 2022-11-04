@@ -374,3 +374,38 @@ nav .navbar-btn {
   color: var(--first-color);
 }
 /* End Offers Section */
+/* Start Blog Section */
+.blog {
+  margin-top: 75px;
+}
+
+.blog .blog-btn .btn {
+  background: -webkit-linear-gradient(60deg, var(--first-color), var(--second-color));
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 75px;
+  margin-bottom: 30px;
+}
+
+.blog .heading {
+  margin-bottom: 50px;
+}
+
+.blog .heading .heading-text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog .heading .heading-text .main,
+.blog .heading .heading-text .text {
+  max-width: 40%;
+}
+
+.blog .heading .heading-text .text {
+  font-size: 18px;
+  margin-right: 0;
+}
+/* End Blog Section */
