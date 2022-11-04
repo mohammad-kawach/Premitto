@@ -21,7 +21,25 @@ $(document).ready(function () {
         $(this).addClass("gradient");
         $(this).addClass("purple-text");
       }
-
     }
   );
 });
+
+// Slides
+var firstImg    = document.getElementById('first-img');
+var secondImg   = document.getElementById('second-img');
+var thirdImg    = document.getElementById('third-img');
+var fourthImg   = document.getElementById('fourth-img');
+
+const slides = [
+                'images/slides/logo-image.png', 
+                'images/slides/logo-image.png-2', 
+                'images/slides/logo-image.png-3', 
+                'images/slides/logo-image.png-4'
+              ];
+
+var click = 0;
+
+function changeSlide() {
+  console.log("slide have been changed");
+}
