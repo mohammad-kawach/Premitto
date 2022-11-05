@@ -3,10 +3,6 @@
   --first-color: #8a1e86;
   --second-color: #fcb43a;
   --third-color: #212529;
-  /* --transparent-main-color: rgb(2 123 236 / 70%); */
-  
-  /* --third-color: #f60100; */
-  /* --section-padding: 100px; */
 }
 /* End Variables */
 
@@ -20,6 +16,7 @@
 
 html {
   scroll-behavior: smooth;
+  cursor: default;
 }
 
 body {
