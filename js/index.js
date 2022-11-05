@@ -33,13 +33,50 @@ var fourthImg   = document.getElementById('fourth-img');
 
 const slides = [
                 'images/slides/logo-image.png', 
-                'images/slides/logo-image.png-2', 
-                'images/slides/logo-image.png-3', 
-                'images/slides/logo-image.png-4'
+                'images/slides/logo-image-2.png', 
+                'images/slides/logo-image-3.png', 
+                'images/slides/logo-image-4.png'
               ];
 
-var click = 0;
+// console.log(slides);
+
+// counter for slides
+let click = 0;
 
 function changeSlide() {
   console.log("slide have been changed");
+  // console.log(event.target);
+  if (event.target.className.match(/\bright\b/)) {
+    if (click == 3) {
+      click = 0;
+    } else {
+      click++;
+    }
+    console.log(`right : ${click}`);
+  } else if (event.target.className.match(/\bleft\b/)) {
+    if (click == 0) {
+      click = 3;
+    } else {
+      click--;
+    }
+    console.log(`left : ${click}`);
+  }
+
+  if (click == 0) {
+    firstImg.src  = slides[0];
+    secondImg.src = slides[1];
+    thirdImg.src  = slides[2];
+  } else if (click == 1) {
+    firstImg.src  = slides[1];
+    secondImg.src = slides[2];
+    thirdImg.src  = slides[3];
+  } else if (click == 2) {
+    firstImg.src  = slides[2];
+    secondImg.src = slides[3];
+    thirdImg.src  = slides[0];
+  } else if (click == 3) {
+    firstImg.src  = slides[3];
+    secondImg.src = slides[0];
+    thirdImg.src  = slides[1];
+  }
 }
