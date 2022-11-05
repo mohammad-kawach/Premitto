@@ -617,7 +617,7 @@ nav .navbar-btn {
   .footer .content .top::after {
     position: absolute;
     content: "";
-    width: 94%;
+    width: 104%;
     height: 1px;
     background-color: var(--third-color);
     bottom: -15px;
@@ -770,6 +770,20 @@ nav .navbar-btn {
 @media screen and (max-width: 991px) {
   .footer .content .top .left p {
     max-width: 100%;
+  }
+
+  .footer .content .top .left ul {
+    display: none !important;
+  }
+
+  .footer .content .top .right {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+  }
+
+  .footer .content .top .right img:last-child {
+    margin-top: 0;
   }
 }
 /* End Footer */
