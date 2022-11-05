@@ -46,20 +46,20 @@ let click = 0;
 function changeSlide() {
   console.log("slide have been changed");
   // console.log(event.target);
-  if (event.target.className.match(/\bright\b/)) {
+  if (event.target.className.match(/\bleft\b/)) {
     if (click == 3) {
       click = 0;
     } else {
       click++;
     }
-    console.log(`right : ${click}`);
-  } else if (event.target.className.match(/\bleft\b/)) {
+    console.log(`left : ${click}`);
+  } else if (event.target.className.match(/\bright\b/)) {
     if (click == 0) {
       click = 3;
     } else {
       click--;
     }
-    console.log(`left : ${click}`);
+    console.log(`right : ${click}`);
   }
 
   if (click == 0) {
